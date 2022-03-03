@@ -7,43 +7,122 @@
 body {
   font-family: sans-serif;
   font-size: 16px;
-  height: 100vh;
+  line-height: 1.7;
+  font-size: 13px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.conversions {
+  border: 1px solid black;
+  max-width: 1440px;
+  margin: 100px;
+  padding: 200px;
   display: grid;
-  grid-template-areas:
-    "header header header"
-    "nav content sidebar"
-    "footer footer footer";
-  grid-template-columns: 1fr 4fr 1fr;
-  grid-template-rows: 80px 1fr 70px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
 }
 
-header,
-footer,
-main,
-aside,
-nav {
-  background-color: steelblue;
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  margin-bottom: 10px;
+}
+
+.icon {
+  font-size: 40px;
+  margin-right: 10px;
+}
+
+.card__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.card__header h3 {
+  font-size: 18px;
+}
+
+.card__header p {
+  opacity: 50%;
+}
+
+.card__lead {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.3;
+  margin-bottom: 15px;
+}
+
+form {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.3;
+  margin-bottom: 15px;
+  opacity: 70%;
+}
+
+.card--bg-red {
+  background: hsl(6, 100%, 60%);
   color: white;
-  padding: 20px;
-  border: skyblue 1px solid;
 }
 
-header {
-  grid-area: header;
+.card--bg-blue {
+  background: hsl(214, 97%, 60%);
+  color: white;
 }
 
-nav {
-  grid-area: nav;
+.card--bg-green {
+  background: hsl(117, 96%, 36%);
+  color: white;
 }
 
-main {
-  grid-area: content;
+.card--bg-orange {
+  background: hsl(44, 89%, 62%);
+  color: white;
 }
 
-aside {
-  grid-area: sidebar;
+.card--bg-pink {
+  background: hsl(301, 97%, 88%);
+  color: white;
 }
 
 footer {
-  grid-area: footer;
+  text-align: center;
+}
+
+/* red */
+.card:nth-of-type(1) {
+  grid-column: 1 / 2;
+  grid-row: 1 / 4;
+}
+
+/* blue */
+.card:nth-of-type(2) {
+  grid-column: 2/ 5;
+  grid-row: 1 / 2;
+}
+
+/* pink */
+.card:nth-of-type(3) {
+  grid-column: 2 / 4;
+  grid-row: 2 / 4;
+}
+
+/* green */
+.card:nth-of-type(4) {
+  grid-column: 1 / 4;
+  grid-row: 4 / 5;
+}
+
+/* orange */
+.card:nth-of-type(5) {
+  grid-column: 4 / 5;
+  grid-row: 2 / 5;
 }

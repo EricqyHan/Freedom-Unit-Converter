@@ -7,16 +7,124 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Calculation Converter</title>
    <link rel="stylesheet" href="css/style.css">
+   <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
 </head>
 
 <body>
    <!-- using body as grid container -->
-   <header>Head</header>
-   <main>content</main>
-   <nav>Navigation</nav>
-   <aside>Sidebar</aside>
-   <footer>Footer
-      <h2>Made to teach math and conversions!</h2>
+   <div class="conversions">
+      <!-- Temperature -->
+      <div class="card card--bg-red">
+         <header class="card__header">
+            <div class="icon"><i class="lni lni-sun card__icon"></i>
+            </div>
+            <div>
+               <h3>Temperature</h3>
+               <p>Convert Celsius to Fahrenheit</p>
+            </div>
+         </header>
+         <p class="card__lead">
+            Conversion Formula: (Celsius * 1.8) + 32
+         </p>
+         <form action="">
+            <div class="form-temperature">
+               <label for="temperature" class="form">Enter temperature in Celsius:</label>
+               <input type="number" name="temperature" id="temperature" class="form">
+               <input type="submit" value="Convert Temperature" id="temperatureSubmit" class="form">
+            </div>
+         </form>
+         <p class="convertedTemperature">88</p>
+      </div>
+      <!-- Distance -->
+      <div class="card card--bg-blue">
+         <header class="card__header">
+            <div class="icon"><i class="lni lni-road"></i>
+            </div>
+            <div>
+               <h3>Distance</h3>
+               <p>Convert Kilometers to Miles</p>
+            </div>
+         </header>
+         <p class="card__lead">
+            Conversion Formula: km * 0.62137
+         </p>
+         <form action="">
+            <div class="form-distance">
+               <label for="distnace" class="form">Enter distance in Kilometers:</label>
+               <input type="number" name="temperature" id="distance" class="form">
+               <input type="submit" value="Convert Distance" id="distanceSubmit" class="form">
+            </div>
+         </form>
+         <p class="convertedDistance">88</p>
+      </div>
+      <!-- Weight -->
+      <div class="card card--bg-pink">
+         <header class="card__header">
+            <div class="icon"><i class="lni lni-weight"></i></div>
+            <div>
+               <h3>Weight</h3>
+               <p>Convert Kilograms to Pounds</p>
+            </div>
+         </header>
+         <p class="card__lead">
+            Conversion Formula: Kilograms * 2.204
+         </p>
+         <form action="">
+            <div class="form-weight">
+               <label for="weight" class="form">Enter weight in Kilograms:</label>
+               <input type="number" name="weight" id="weight" class="form">
+               <input type="submit" value="Convert Weight" id="weightSubmit" class="form">
+            </div>
+         </form>
+         <p class="convertedWeight">88</p>
+      </div>
+      <!-- Measurements -->
+      <div class="card card--bg-green">
+         <header class="card__header">
+            <div class="icon"><i class="lni lni-ruler-alt"></i>
+            </div>
+            <div>
+               <h3>Length</h3>
+               <p>Convert Centimeters to Inches</p>
+            </div>
+         </header>
+         <p class="card__lead">
+            Conversion Formula: cm * 0.3937
+         </p>
+         <form action="">
+            <div class="form-length">
+               <label for="length" class="form">Enter distance in Centimeters:</label>
+               <input type="number" name="length" id="length" class="form">
+               <input type="submit" value="Convert Length" id="lengthSubmit" class="form">
+            </div>
+         </form>
+         <p class="convertedLength">88</p>
+      </div>
+      <!-- Volume -->
+      <div class="card card--bg-orange">
+         <header class="card__header">
+            <div class="icon"><i class="lni lni-juice"></i>
+            </div>
+            <div>
+               <h3>Volume</h3>
+               <p>Convert Liters to Gallons</p>
+            </div>
+         </header>
+         <p class="card__lead">
+            Conversion Formula: L * 0.264
+         </p>
+         <form action="">
+            <div class="form-length">
+               <label for="length" class="form">Enter volume in Liters:</label>
+               <input type="number" name="volume" id="volume" class="form">
+               <input type="submit" value="Convert Volume" id="volumeSubmit" class="form">
+            </div>
+         </form>
+         <p class="convertedVolume">88</p>
+      </div>
+   </div>
+   <footer>
+      Made by Eric Han
    </footer>
 </body>
 
