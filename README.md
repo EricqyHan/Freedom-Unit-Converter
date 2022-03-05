@@ -1,5 +1,5 @@
-# TemperatureConverter
+# Freedom Unit Converter
 
-This is my temperature converter.
+This app converts metric units to Freedom Units.
 
 [Converter](https://ericqyhan.github.io/Freedom-Unit-Converter/)
