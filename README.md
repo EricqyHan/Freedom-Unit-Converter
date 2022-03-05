@@ -2,4 +2,4 @@
 
 This is my temperature converter.
 
-[Converter](https://ericqyhan.github.io/TemperatureConverter/)
+[Converter](https://ericqyhan.github.io/Freedom-Unit-Converter/)
