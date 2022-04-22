@@ -4,6 +4,10 @@
   margin: 0;
 }
 
+h1 {
+  text-align: center;
+}
+
 body {
   font-family: sans-serif;
   font-size: 16px;
@@ -19,7 +23,7 @@ body {
 .conversions {
   border: 1px solid black;
   max-width: 1440px;
-  margin: 100px;
+  margin: 0 auto;
   padding: 200px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
